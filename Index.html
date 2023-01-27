@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don Bosco</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <h1>
+        Don Bosco Matriculation School
+    </h1>
+    <form method="post" action="process.php">
+        <div class="data">
+        <label for="uname">
+            <b>Firstname: </b>
+        </label>
+        <input type="text" id="firstName" name="name" placeholder="FirstName..">
+        <div id="first-name-err"></div>
+        <br>
+        <label for="lsname">
+            <b>Father's name: </b>
+        </label>
+        <input type="text" id="lastName" name="fname" placeholder="LastName..">
+        <div id="last-name-err"></div>
+        <br>
+        <label for="E-mail">
+            <b>E-mail</b>
+        </label>
+        <input type="email" id="emailAddress" name="mail" placeholder="Email Address">
+        <div id="email-err"></div>
+        <br>
+        <label for="gender"></label>
+        <b>Gender</b>
+        <select name="gender">
+            <option value="none" selected></option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">other</option>
+        </select>
+        <br><br>
+        <label for="Phonenumer"></label>
+        <b>Mobile</b>
+        <input type="text" name="mbno" id="Phonenumer" placeholder="Mobile Nubmer">
+        <div id="mobile-number-err"></div>
+        <br>
+        <label for="Address"></label>
+        <b>Address</b>
+        <textarea name="add" id="adds"  rows="4">
+        </textarea>
+        <br><br>
+        <label for="10th Mark"></label>
+        <b>X<sup>th</sup> 2022 Result</b>
+        <div class="container">
+        <table>
+            <tr><td>Tamil</td><td><input type="number" id="txtStudentName" name="tam" min="2" max="100"></td></tr>
+            <tr><td>English</td><td><input type="number" id="txtStudentClass" name="eng" min="2" max="100"></td></tr>
+            <tr><td>Maths</td><td><input type="number" id="txtTotalMarks" name="math" min="2" max="100"></td></tr>
+            <tr><td>Science</td><td><input type="number" id="txtAvgMarks" name="sci" min="2" max="100"></td></tr>
+            <tr><td>Social</td><td><input type="number" id="txtGrade" min="2" name="ss" max="100"></td></tr>
+        </table>
+        </div>
+        <br>
+        <input type="reset" value="Reset" class="reset" >
+        <input type="submit" value="Submit" class="submit" onclick="myfunc()">
+        </div>
+    </form>
+</body>
+<script src="Logic.js"></script>
+
+</html>
